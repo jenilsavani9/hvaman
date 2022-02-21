@@ -20,7 +20,7 @@ function Navbar() {
         <form>
             <div className="input-group my-5">
                 <input type="text" className="form-control" onChange={handleChange} placeholder="Enter Location" aria-describedby="button-addon2" value={location} />
-                <button className="btn btn-outline-secondary" type="submit" id="button-addon2" onClick={handleSubmit}>Submit</button>
+                <button className="btn btn-primary" type="submit" id="button-addon2" onClick={handleSubmit}>Submit</button>
             </div>
         </form>
     )

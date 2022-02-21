@@ -7,7 +7,7 @@ function Cards(props) {
     return (
         <div className='row row-cols-1 row-cols-md-4 g-4'>
             <div className='col'>
-                <div className="card border-dark mb-3" style={{ "maxWidth": "18rem" }}>
+                <div className={`card text-${props.text} bg-${props.mode} mb-3`} style={{ "maxWidth": "18rem" }}>
                     <div className="card-header">Location</div>
                     <div className="card-body">
                         <h5 className="card-title">{data_json.location.name}</h5>
@@ -17,7 +17,7 @@ function Cards(props) {
             </div>
 
             <div className='col'>
-                <div className="card border-dark mb-3" style={{ "maxWidth": "18rem" }}>
+                <div className={`card text-${props.text} bg-${props.mode} mb-3`} style={{ "maxWidth": "18rem" }}>
                     <div className="card-header">Geographic Coordinate</div>
                     <div className="card-body">
                         <h5 className="card-title">Latitude : {data_json.location.lat}</h5>
@@ -27,7 +27,7 @@ function Cards(props) {
             </div>
 
             <div className='col'>
-                <div className="card border-dark mb-3" style={{ "maxWidth": "18rem" }}>
+                <div className={`card text-${props.text} bg-${props.mode} mb-3`} style={{ "maxWidth": "18rem" }}>
                     <div className="card-header">Date & Time</div>
                     <div className="card-body">
                         <h5 className="card-title">Date : {data_json.location.localtime.slice(0,10)}</h5>
@@ -37,7 +37,7 @@ function Cards(props) {
             </div>
 
             <div className='col'>
-                <div className="card border-dark mb-3" style={{ "maxWidth": "18rem" }}>
+                <div className={`card text-${props.text} bg-${props.mode} mb-3`} style={{ "maxWidth": "18rem" }}>
                     <div className="card-header">Timezone</div>
                     <div className="card-body">
                         <h5 className="card-title">{data_json.location.tz_id}</h5>
@@ -46,7 +46,7 @@ function Cards(props) {
             </div>
 
             <div className='col'>
-                <div className="card border-dark mb-3" style={{ "maxWidth": "18rem" }}>
+                <div className={`card text-${props.text} bg-${props.mode} mb-3`} style={{ "maxWidth": "18rem" }}>
                     <div className="card-header">Temperature</div>
                     <div className="card-body">
                         <h5 className="card-title">Celsius : {data_json.current.temp_c}</h5>
@@ -56,7 +56,7 @@ function Cards(props) {
             </div>
 
             <div className='col'>
-                <div className="card border-dark mb-3" style={{ "maxWidth": "18rem" }}>
+                <div className={`card text-${props.text} bg-${props.mode} mb-3`} style={{ "maxWidth": "18rem" }}>
                     <div className="card-header">Condition</div>
                     <div className="card-body">
                         <img src={data_json.current.condition.icon}></img>
@@ -66,7 +66,7 @@ function Cards(props) {
             </div>
 
             <div className='col'>  
-                <div className="card border-dark mb-3" style={{ "maxWidth": "18rem" }}>
+                <div className={`card text-${props.text} bg-${props.mode} mb-3`} style={{ "maxWidth": "18rem" }}>
                     <div className="card-header">Wind Speed</div>
                     <div className="card-body">
                         <h5 className="card-title">MPH : {data_json.current.wind_mph}</h5>
